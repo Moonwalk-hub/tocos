@@ -1,0 +1,232 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5df;
+    color: #222;
+}
+
+/* Header */
+
+header {
+    background-color: #171717;
+    color: white;
+    padding: 25px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: #ffd52e;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd52e;
+}
+
+/* Home section */
+
+.hero {
+    background-color: #ffd52e;
+    padding: 50px 6%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero img {
+    width: 48%;
+    height: 320px;
+    object-fit: cover;
+    border: 4px solid #171717;
+    box-shadow: 8px 8px 0 #b83220;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-text span {
+    color: #b83220;
+}
+
+.hero-text p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.hero-text a {
+    display: inline-block;
+    background-color: #171717;
+    color: #ffd52e;
+    padding: 15px 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-text a:hover {
+    background-color: #b83220;
+    color: white;
+}
+
+/* Menu, stops and booking */
+
+section:not(.hero) {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+h2 {
+    color: #b83220;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#menu {
+    background-color: #fff5df;
+}
+
+#menu h3 {
+    color: #b83220;
+    margin-top: 25px;
+}
+
+#menu p {
+    margin-top: 8px;
+}
+
+#stops {
+    background-color: #ffedcf;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #171717;
+    color: #ffd52e;
+}
+
+tr:hover {
+    background-color: #ffe9a0;
+}
+
+#booking {
+    background-color: #fff5df;
+}
+
+#booking p {
+    margin-bottom: 12px;
+}
+
+#booking a {
+    display: inline-block;
+    background-color: #b83220;
+    color: white;
+    padding: 14px 25px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#booking a:hover {
+    background-color: #171717;
+}
+
+/* Footer */
+
+footer {
+    background-color: #171717;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h3 {
+    color: #ffd52e;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Phone screens */
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 35px 6%;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    section:not(.hero) {
+        padding: 35px 5%;
+    }
+
+    th, td {
+        padding: 9px 5px;
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+

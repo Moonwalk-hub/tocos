@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rolling Taco Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<header>
+    <h1>🌮 Rolling Taco</h1>
+    <p>Orders Dashboard</p>
+</header>
+
+<div class="container">
+
+    <h2>Orders Overview</h2>
+
+    <div class="summary">
+        <div class="card">
+            <h3>All Orders</h3>
+            <p id="all">10</p>
+        </div>
+
+        <div class="card pending">
+            <h3>Pending Orders</h3>
+            <p id="pending">6</p>
+        </div>
+
+        <div class="card delivered">
+            <h3>Delivered Orders</h3>
+            <p id="delivered">4</p>
+        </div>
+    </div>
+
+    <h2>Customer Orders</h2>
+
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Customer</th>
+            <th>Order</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+
+        <tr>
+            <td>1</td><td>John</td><td>Al Pastor</td>
+            <td class="status">Pending</td>
+            <td><button onclick="deliver(this)">Deliver</button></td>
+        </tr>
+        <tr>
+            <td>2</td><td>Mary</td><td>Chicken Tinga</td>
+            <td class="status">Pending</td>
+            <td><button onclick="deliver(this)">Deliver</button></td>
+        </tr>
+        <tr>
+            <td>3</td><td>Peter</td><td>Loaded Nachos</td>
+            <td class="status done">✓ Delivered</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>4</td><td>Grace</td><td>Black Bean</td>
+            <td class="status">Pending</td>
+            <td><button onclick="deliver(this)">Deliver</button></td>
+        </tr>
+        <tr>
+            <td>5</td><td>David</td><td>Al Pastor</td>
+            <td class="status done">✓ Delivered</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>6</td><td>Sarah</td><td>Chicken Tinga</td>
+            <td class="status">Pending</td>
+            <td><button onclick="deliver(this)">Deliver</button></td>
+        </tr>
+        <tr>
+            <td>7</td><td>Brian</td><td>Loaded Nachos</td>
+            <td class="status done">✓ Delivered</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>8</td><td>Faith</td><td>Black Bean</td>
+            <td class="status">Pending</td>
+            <td><button onclick="deliver(this)">Deliver</button></td>
+        </tr>
+        <tr>
+            <td>9</td><td>Kevin</td><td>Al Pastor</td>
+            <td class="status done">✓ Delivered</td>
+            <td>Completed</td>
+        </tr>
+        <tr>
+            <td>10</td><td>Ann</td><td>Chicken Tinga</td>
+            <td class="status">Pending</td>
+            <td><button onclick="deliver(this)">Deliver</button></td>
+        </tr>
+    </table>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
